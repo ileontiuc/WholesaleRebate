@@ -10,7 +10,7 @@ public class FriendsAndFamily extends Rebate{
 	}
 	
 	public String getDescription() {
-		return product.getDescription() + ", Friends & Family 10% discount";
+		return product.getDescription() + "-- Friends & Family 10% discount";
 	}
 	
 	public double cost() {

@@ -2,13 +2,14 @@ package products;
 
 public class Chair extends Product{
 
-	double price=78.99;
+	private double price;
 	
 	public Chair() {
+		price=78.99;
 		description = "Chair - original price: "+price+"$ \n";
 	}
 	
 	public double cost() {
-		return 78.99;
+		return price;
 	}
 }

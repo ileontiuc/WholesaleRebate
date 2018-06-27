@@ -11,7 +11,7 @@ public class Clearance extends Rebate{
 		}
 		
 		public String getDescription() {
-			return beverage.getDescription() + ", Clearance 70% discount";
+			return beverage.getDescription() + "-- Clearance 70% discount";
 		}
 		
 		public double cost() {
