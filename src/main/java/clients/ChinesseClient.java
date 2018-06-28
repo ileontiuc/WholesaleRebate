@@ -1,13 +1,12 @@
-package Wholesales.test;
+package clients;
 
-import decorators.FriendsAndFamily;
 import decorators.VAT;
 import products.Product;
 
-public class Mom implements Client{
+public class ChinesseClient implements Client {
 
 	private Product addDefaultRebates(Product product) {
-		return new FriendsAndFamily(product);
+		return new VAT(product);
 	}
 
 

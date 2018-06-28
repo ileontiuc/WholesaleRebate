@@ -1,4 +1,4 @@
-package Wholesales.test;
+package clients;
 
 import products.Product;
 

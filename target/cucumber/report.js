@@ -1,53 +1,109 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('cucumberJava\cucumberJava.feature');
 formatter.feature({
   "line": 1,
-  "name": "CucumberJava",
+  "name": "Apply prescribed rebates to orders",
   "description": "",
-  "id": "cucumberjava",
+  "id": "apply-prescribed-rebates-to-orders",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Login functionality exists",
+  "line": 5,
+  "name": "Chinesse client has specific rebate",
   "description": "",
-  "id": "cucumberjava;login-functionality-exists",
+  "id": "apply-prescribed-rebates-to-orders;chinesse-client-has-specific-rebate",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 5,
-  "name": "the factory has a chair",
+  "line": 7,
+  "name": "the client is Chinesse",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "I order a chair",
+  "line": 8,
+  "name": "a chair is orderd",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "I get discount",
+  "line": 9,
+  "name": "VAT rebate applies",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "cucumberJava.createChair()"
+  "location": "cucumberJava.createChinesseClient()"
 });
 formatter.result({
-  "duration": 109461099,
+  "duration": 262758120,
   "status": "passed"
 });
 formatter.match({
-  "location": "cucumberJava.goToFacebook()"
+  "location": "cucumberJava.orderChair()"
 });
 formatter.result({
-  "duration": 330049,
+  "duration": 346622,
   "status": "passed"
 });
 formatter.match({
-  "location": "cucumberJava.discount()"
+  "location": "cucumberJava.VATdefaultClientRebate()"
 });
 formatter.result({
-  "duration": 2115349,
+  "duration": 7471599,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Multiple rebate types on same order",
+  "description": "",
+  "id": "apply-prescribed-rebates-to-orders;multiple-rebate-types-on-same-order",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 14,
+  "name": "the client is the mom",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 15,
+  "name": "a chair is orderd",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 16,
+  "name": "there is a clearance",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 17,
+  "name": "Friends\u0026Family and Clearance rebate applies",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "cucumberJava.createMomClient()"
+});
+formatter.result({
+  "duration": 1295867,
+  "status": "passed"
+});
+formatter.match({
+  "location": "cucumberJava.orderChair()"
+});
+formatter.result({
+  "duration": 49719,
+  "status": "passed"
+});
+formatter.match({
+  "location": "cucumberJava.applyClearance()"
+});
+formatter.result({
+  "duration": 203460,
+  "status": "passed"
+});
+formatter.match({
+  "location": "cucumberJava.composedRebates()"
+});
+formatter.result({
+  "duration": 863911,
   "status": "passed"
 });
 });

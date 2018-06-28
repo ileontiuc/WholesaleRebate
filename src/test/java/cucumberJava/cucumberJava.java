@@ -3,9 +3,9 @@ package cucumberJava;
 
 import static org.junit.Assert.assertEquals;
 
-import Wholesales.test.ChinesseClient;
-import Wholesales.test.Client;
-import Wholesales.test.Mom;
+import clients.ChinesseClient;
+import clients.Client;
+import clients.Mom;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
